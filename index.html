@@ -3,13 +3,58 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Sasquatch Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css/"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
     <script src="assets/javascript/game.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>  
+     
     
+</head>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sasquatch Hangman</h1>
+      <p class="lead"> What states can Bigfoot be found?</p>
+    </div>
+  </div>
+<body>
+
+<div class="container">
+        <div class="card">
+                <h5 class="card-header">Word:</h5>
+                <div class="card-body" id="wordToGuess">
+                  <h5 id="wordToGuess">"_,_,_,_,_,_,_,_,_,_,"</h5>
+                </div>
+              </div>
+        
+        <div class="card">
+            <h5 class="card-header">What you've guessed:</h5>
+            <div class="card-body">
+                <h5 class="card-title">"a,b,s,g,w,t"</h5> <span id="wrongGuess"></span>
+            </div>
+        </div>
+
+        <div class="card">
+                <h5 class="card-header">Guesses left:  <span id="numGuess">12</span></h5>
+              </div>
+        
+        <div class="card">
+                <h5 class="card-header">Wins: <span id="winCounter">7 </span> </h5> 
+                
+        </div>
+        <div class="card">
+                <h5 class="card-header">Losses: <span id="lossCounter"> 0 </span></h5> 
+              </div>
+
+
+
+
+
+
+
+</div>
+
+
 </body>
 </html>
