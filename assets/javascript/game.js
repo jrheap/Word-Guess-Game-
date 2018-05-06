@@ -92,7 +92,7 @@ console.log(letter)
             
             progressWord = [];
             for (i = 0; i < currentWord.length; i++) {
-            progressWord[positions[i]].push("__");
+            progressWord.push("__");
         }
 
 
